@@ -1,7 +1,11 @@
 {
   "name": "theme",
   "version": "0.0.1",
+  "scripts": {
+    "dev": "slate start"
+  },
   "devDependencies": {
+    "@shopify/slate": "^0.14.0",
     "@shopify/slate-tools": "0.14.0"
   }
 }

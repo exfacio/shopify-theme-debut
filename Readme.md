@@ -6,7 +6,6 @@ https://github.com/Shopify/slate
 
 ## Development
 
-1. Install Slate `npm i -g @shopify/slate`
-2. Get `config.yml` file
+2. Get `config.yml` file that contains app secrets.
 3. `npm i`
-4. `slate start`
+4. `npm run dev`
