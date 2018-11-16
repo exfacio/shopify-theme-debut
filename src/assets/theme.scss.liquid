@@ -484,6 +484,8 @@ $font-weight-body: {{ base_font.weight }};
 $font-size-header: {{ settings.type_header_base_size }} * 1px;
 $font-bold-titles: {{ settings.type_bold_product_titles }};
 
+$font-size-subheader: {{ settings.type_header_base_size }} * 0.75px;
+
 $font-size-base: {{ settings.type_base_size }}px; // Henceforth known as 1em
 
 $font-stack-cart-notification: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -791,6 +793,11 @@ $slick-opacity-not-active: 0.25;
   #Normalize
   Based on normalize.css v3.0.2 | MIT License | git.io/normalize
 ==============================================================================*/
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -3147,12 +3154,17 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 /*================ TEMPLATES ================*/
 /*============= Templates | Password =============*/
 
+.template-password {
+  background: linear-gradient(0deg, $color-body 0%, rgba($color-btn-primary, 0.3) 100%);
+  height: 100%;
+  min-height: 100%;
+}
+
 .password-page {
   display: table;
   height: 100%;
   width: 100%;
   color: $color-body-text;
-  background-color: $color-body;
   background-size: cover;
 
   .ie9 & {
@@ -3254,6 +3266,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 
 .password__form-subheading {
+  font-size: $font-size-subheader;
   line-height: 1.7;
 }
 
