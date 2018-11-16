@@ -1,5 +1,9 @@
 # Ex Facio Shopify Theme
 
+## 🚨 Caution
+
+As of right now modifying the theme via `npm run dev` will update the live site. We'll need to setup an actual dev store post launch.
+
 ## Getting Started with Shopify Themes
 
 https://github.com/Shopify/slate
