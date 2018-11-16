@@ -10,6 +10,10 @@ https://github.com/Shopify/slate
 
 ## Development
 
-2. Get `config.yml` file that contains app secrets.
-3. `npm i`
-4. `npm run dev`
+1. Get `config.yml` file that contains app secrets.
+2. `npm i`
+3. `npm run dev`
+
+### Notes
+
+- When editing scss files, always edit `*.scss.liquid`. The liquid files have access to theme settings from the Shopify store and will automatically be converted from liquid to scss, then from scss to css.
