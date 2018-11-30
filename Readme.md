@@ -17,3 +17,8 @@ https://github.com/Shopify/slate
 ### Notes
 
 - When editing scss files, always edit `*.scss.liquid`. The liquid files have access to theme settings from the Shopify store and will automatically be converted from liquid to scss, then from scss to css.
+
+### Resources 
+
+- [Theme Settings & settings_schema.json](https://help.shopify.com/en/themes/development/theme-editor/settings-schema)
+- [Understanding Shopify Theme Styles and Presets With settings_data.json](https://www.shopify.com/partners/blog/shopify-theme-styles-and-presets)
