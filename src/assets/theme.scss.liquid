@@ -2426,7 +2426,6 @@ textarea {
 }
 
 .site-nav {
-  position: relative;
   padding: 0;
   text-align: center;
   margin: 25px 0;
@@ -2494,7 +2493,7 @@ textarea {
 
 /*================ Dropdowns ================*/
 .site-nav--has-dropdown {
-  position: relative;
+  position: static;
 }
 
 .site-nav--has-centered-dropdown {
@@ -2510,9 +2509,11 @@ textarea {
   z-index: $z-index-dropdown;
   text-align: left;
   border: 1px solid $color-border;
-  background: $color-bg;
-  left: -1px;
-  top: 41px;
+  background: rgba($color-bg, 0.99);
+  top: 80px;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
   .site-nav__link {
     padding: 4px 15px 5px;
@@ -2531,7 +2532,6 @@ textarea {
 .site-nav__dropdown--centered {
   width: 100%;
   border: 0;
-  background: none;
   padding: 0;
   text-align: center;
 }
@@ -2540,9 +2540,9 @@ textarea {
 .site-nav__childlist {
   display: inline-block;
   border: 1px solid $color-border;
-  background: $color-bg;
   padding: 11px 17px;
   text-align: left;
+  width: 100%;
 }
 
 .site-nav__childlist-grid {
@@ -3983,7 +3983,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 /*================ MODULES ================*/
 .site-header {
   background-color: $color-body;
-  position: relative;
   padding: 0 $gutter-site;
 
   @include media-query($small) {
@@ -4811,7 +4810,6 @@ $nav-button-padding: 15px;
 
 .site-header__mobile-nav {
   z-index: 999;
-  position: relative;
   background-color: $color-body;
 
   @include media-query($small) {
